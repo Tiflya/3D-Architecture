@@ -69,6 +69,7 @@ header {
 .header-caption {
     margin: 0;
     font-size: var(--font-size-caption);
+    text-align: center;
 }
 main {
     width: 100%;
