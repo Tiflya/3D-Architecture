@@ -1,0 +1,70 @@
+/* Настройки для мобильных устройств */
+@media only screen and (max-width: 833px) {
+    :root{
+        --content-width: 90%;
+        --font-size-caption: 22pt;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+    nav ul {
+        background-color: hsla(0, 0%, 0%, 0.7);
+        width: 100%;
+        position: absolute;
+        top: var(--nav-height);
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul a:hover {
+        border-radius: 0;
+    }
+    .logo-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo {
+        margin-right: 0;
+    }
+    .links {
+        display: none;
+    }
+    .show-links {
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-toggle {
+        display: block;
+        margin: 0 16px;
+    }
+    #menu-toggle,
+    #menu-toggle::before,
+    #menu-toggle::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        border-radius: 2px;
+    }
+    #menu-toggle::before {
+        content: '';
+        margin-top: -8px;
+    }
+    #menu-toggle::after {
+        content: '';
+        margin-top: 8px;
+    }
+    .page-header {
+        margin: 42px 0 0 0;
+    }
+    .model-container {
+        width: 100%;
+    }
+}
